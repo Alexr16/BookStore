@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.li-navbar {
+  list-style: none;
+  padding-inline: 0.5rem;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.logo-conatiner {
+  display: flex;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
