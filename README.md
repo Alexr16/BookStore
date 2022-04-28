@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Book Store
 
-## Available Scripts
+> In this project I build a "Awesome Books" App that allows users to add a book, remove selected book, and display a list of books.
+<!-- ## Screenshot
 
-In the project directory, you can run:
+<img src="./home.png">
+<img src="./calculator.png">
+<img src="./quote.png"> -->
+## Built With
 
-### `npm start`
+- React
+- SCSS
+- JavaScript
+- HTML
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For a live demo
+- Heroku [click here](https://math-magicians-jorge.herokuapp.com/quote).
+- Netlify [click here](https://netlify-thinks-alexr16-is-great.netlify.app). -->
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy of the project, follow these steps: 
+1. Open the terminal and navigate to the folder where you would like to put these files.
+2. Type the following commands into the terminal: 
+ ```
+ git clone https://github.com/Alexr16/BookStore
+ ```
+ ```
+ cd MathMagicians
+ ```
+ 
+## Run project
 
-### `npm run build`
+```bash
+$ npm install
+$ npm run start # this will make webpack watching for your changes in code
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Open page in browser
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+$ open dist/index.html
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Author
 
-### `npm run eject`
+👤 **George**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- GitHub: [@Alexr16](https://github.com/Alexr16)
+- Twitter: [@ReveloJ](https://twitter.com/ReveloJ)
+- LinkedIn: [Jorge Ríos](https://www.linkedin.com/in/jorge-r%C3%ADos-3b33ab22b)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🤝 Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contributions, issues, and feature requests are welcome!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Feel free to check the [issues page](https://github.com/Alexr16/BookStore/issues).
 
-## Learn More
+## Show your support
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Give a ⭐️ if you like this project!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
 
-### Code Splitting
+- Thanks to my peers who are always there to offer support. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 License
 
-### Analyzing the Bundle Size
+This project is [MIT](./LICENSE) licensed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
