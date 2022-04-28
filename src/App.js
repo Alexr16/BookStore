@@ -4,16 +4,14 @@ import Navbar from './components/Navbar';
 import Books from './pages/Books';
 import Categories from './pages/Categories';
 
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/books" element={<Books />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
-    </>
-  );
-}
+const App = () => (
+  <>
+    <Navbar />
+    <Routes>
+      <Route path="/books" element={<Books />} />
+      <Route path="/categories" element={<Categories />} />
+    </Routes>
+  </>
+);
 
 export default App;

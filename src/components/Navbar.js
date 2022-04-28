@@ -46,7 +46,7 @@ const Navbar = () => (
           </li>
         </ul>
       </div>
-      <div className="user">Bookstore CMS</div>
+      <div className="user">log icon</div>
     </nav>
     <Outlet />
   </div>
