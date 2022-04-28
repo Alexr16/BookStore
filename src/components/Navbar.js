@@ -22,7 +22,7 @@ const Navbar = () => (
                 textDecoration: 'none',
                 color: isActive ? 'blue' : 'black',
               })}
-              to="/books"
+              to="/"
               exact
             >
               Books

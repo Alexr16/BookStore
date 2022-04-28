@@ -1,5 +1,6 @@
 import React from 'react';
 import BooksList from '../components/BooksList';
+import Form from '../components/Form';
 
 const Books = () => {
   const books = [
@@ -21,11 +22,16 @@ const Books = () => {
   ];
 
   return (
-    <div className="books-container">
-      <BooksList
-        books={books}
-      />
-    </div>
+    <>
+      <div className="books-container">
+        <BooksList
+          books={books}
+        />
+      </div>
+      <div>
+        <Form />
+      </div>
+    </>
   );
 };
 export default Books;

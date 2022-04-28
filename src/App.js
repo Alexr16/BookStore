@@ -9,7 +9,7 @@ const App = () => (
     <Navbar />
     <Routes>
       <Route
-        path="/books"
+        path="/"
         element={<Books />}
       />
       <Route path="/categories" element={<Categories />} />
