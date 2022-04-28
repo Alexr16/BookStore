@@ -21,3 +21,16 @@ h1 {
   display: flex;
   align-items: center;
 }
+
+.book-container {
+ margin: 4rem;
+}
+
+.book-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+ list-style: none;
+}
