@@ -44,4 +44,33 @@ h1 {
 li {
   list-style: none;
 }
+
+.form-container {
+  margin: 4rem;
+}
+
+.form {
+  padding: 1rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form .title {
+  margin-right: 1.5rem;
+  width: 65%;
+  padding: 5px;
+}
+
+.form .author {
+  margin-right: 1.5rem;
+  padding: 5px;
+}
+
+.form .add-book {
+  padding: 5px;
+}
 /*# sourceMappingURL=App.css.map */

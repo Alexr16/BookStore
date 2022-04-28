@@ -4,7 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 const Navbar = () => (
   <div>
     <nav style={{
-      padding: '1rem',
+      margin: '1rem 4rem',
       display: 'flex',
       justifyContent: 'space-between',
     }}

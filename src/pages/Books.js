@@ -28,7 +28,8 @@ const Books = () => {
           books={books}
         />
       </div>
-      <div>
+      <div className="form-container">
+        <h2>ADD NEW BOOK</h2>
         <Form />
       </div>
     </>
