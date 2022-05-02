@@ -1,4 +1,4 @@
-const STATUS = 'STATUS';
+const STATUS = 'bookstore/categories/BOOK_STATUS';
 
 export const bookStatus = (book) => ({
   type: STATUS, book,
