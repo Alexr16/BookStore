@@ -9,24 +9,19 @@ export const removeBook = (book) => ({
   type: REMOVE, book,
 });
 
-const reducer = (state = [], action) => {
+const bookReducer = (state = [], action) => {
   switch (action.type) {
     case ADD:
       return [
-        ...state,
-        {
-          id: action.id,
-          title: action.title,
-          author: action.author,
-        },
+        ...state, action.book,
       ];
 
     case REMOVE:
-      return state;
+      return state.filter((book) => book.id !== action.book);
 
     default:
       return state;
   }
 };
 
-export default reducer;
+export default bookReducer;
