@@ -23,7 +23,6 @@ const Navbar = () => (
                 color: isActive ? 'blue' : 'black',
               })}
               to="/"
-              exact
             >
               Books
             </NavLink>
@@ -39,7 +38,6 @@ const Navbar = () => (
                 color: isActive ? 'blue' : 'black',
               })}
               to="/categories"
-              exact
             >
               Categories
             </NavLink>

@@ -4,7 +4,7 @@ export const bookStatus = (book) => ({
   type: STATUS, book,
 });
 
-const statusReducer = (state = [], action) => {
+const categoriesReducer = (state = [], action) => {
   switch (action.type) {
     case STATUS:
       return 'Under construction';
@@ -14,4 +14,4 @@ const statusReducer = (state = [], action) => {
   }
 };
 
-export default statusReducer;
+export default categoriesReducer;
