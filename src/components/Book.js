@@ -6,9 +6,6 @@ import { removeBook } from '../redux/books/books';
 const Book = (prop) => {
   const { title, author, id } = prop;
   const dispatch = useDispatch();
-  const remove = (id) => {
-    dispatch(removeBook(id));
-  };
 
   return (
     <li className="book-container">
@@ -19,7 +16,7 @@ const Book = (prop) => {
           type="button"
           label="Remove"
           onClick={() => {
-            dispatch(remove(id));
+            dispatch(removeBook(id));
           }}
         >
           Remove
@@ -28,12 +25,5 @@ const Book = (prop) => {
     </li>
   );
 };
-
-// Book.propTypes = {
-//   book: PropTypes.shape({
-//     title: PropTypes.string.isRequired,
-//     author: PropTypes.string.isRequired,
-//   }).isRequired,
-// };
 
 export default Book;
