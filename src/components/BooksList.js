@@ -1,7 +1,8 @@
+import { useSelector } from 'react-redux';
 import Book from './Book';
 
-const BooksList = (prop) => {
-  const { books } = prop;
+const BooksList = () => {
+  const books = useSelector((state) => state.books);
   return (
     <ul>
       {books.map((book) => (
