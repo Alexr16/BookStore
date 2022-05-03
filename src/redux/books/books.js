@@ -1,7 +1,23 @@
 const ADD = 'bookstore/books/ADD_BOOK';
 const REMOVE = 'bookstore/books/REMOVE_BOOK';
 
-const initialState = [];
+const initialState = [
+  {
+    id: 1,
+    title: 'Six of Crows',
+    author: 'Leigh Bardugo',
+  },
+  {
+    id: 2,
+    title: 'Every Day',
+    author: 'David Levithan',
+  },
+  {
+    id: 3,
+    title: 'Darius the Great Is Not Okay',
+    author: 'Adib Khorram',
+  },
+];
 
 export const addBook = (book) => ({
   type: ADD,
