@@ -17,7 +17,4 @@ const BooksList = () => {
   );
 };
 
-// BooksList.propTypes = {
-//   books: PropTypes.shape([]).isRequired,
-// };
 export default BooksList;
