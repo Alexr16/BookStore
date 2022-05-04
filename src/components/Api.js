@@ -7,6 +7,7 @@ const createBook = async (id, bookTitle, author) => {
       item_id: id,
       title: bookTitle,
       author,
+      category: 'default',
     }),
     headers: {
       'Content-type': 'application/json; charset=utf-8',
