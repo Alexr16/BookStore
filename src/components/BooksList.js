@@ -9,7 +9,7 @@ const BooksList = () => {
   useEffect(() => {
     dispatch(get());
   }, []);
-  console.log(books);
+
   return (
     <ul>
       {books.map((book) => (

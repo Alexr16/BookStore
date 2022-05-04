@@ -2,7 +2,7 @@ import { createBook, deleteBook, URL } from '../../components/Api';
 
 const ADD = 'bookStore/books/ADD_BOOK';
 const REMOVE = 'bookStore/books/REMOVE_BOOK';
-const GET = 'bookStore/books/GET';
+const GET = 'bookStore/books/GET_BOOK';
 
 const initialState = [
   // {
@@ -37,11 +37,12 @@ export const addBook = (book) => async (dispatch) => {
   await createBook(id, title, author);
   dispatch({
     type: ADD,
-    book: {
+    book: [
       id,
-      title,
-      author,
-    },
+      [{
+        title,
+        author,
+      }]],
   });
 };
 
@@ -64,7 +65,7 @@ const booksReducer = (state = initialState, action) => {
       ];
 
     case REMOVE:
-      return state.filter((book) => book.id !== action.book);
+      return state.filter((book) => book[0] !== action.book);
 
     default:
       return state;
