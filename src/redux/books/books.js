@@ -33,14 +33,15 @@ export const get = () => async (dispatch) => {
 };
 
 export const addBook = (book) => async (dispatch) => {
-  const {id, title, author } = book;
+  const { id, title, author } = book;
   await createBook(id, title, author);
   dispatch({
     type: ADD,
-    book: [id, [{
+    book: {
+      id,
       title,
       author,
-    }]],
+    },
   });
 };
 

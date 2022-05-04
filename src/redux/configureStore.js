@@ -9,7 +9,7 @@ const rootReducer = combineReducers({
   categories,
 });
 
-const middleware = applyMiddleware(logger, thunk);
+const middleware = applyMiddleware(thunk, logger);
 const store = createStore(rootReducer, middleware);
 
 export default store;
