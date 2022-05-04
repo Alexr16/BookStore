@@ -2,7 +2,8 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
 const Book = (prop) => {
-  const { title, author, id } = prop;
+  const { book } = prop;
+  const [id, [{ title, author }]] = book;
   const dispatch = useDispatch();
 
   return (

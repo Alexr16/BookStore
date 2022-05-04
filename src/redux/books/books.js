@@ -1,43 +1,55 @@
-const ADD = 'bookstore/books/ADD_BOOK';
-const REMOVE = 'bookstore/books/REMOVE_BOOK';
+import { createBook, deleteBook, URL } from '../../components/Api';
 
-const initialState = [
-  {
-    id: 1,
-    title: 'Six of Crows',
-    author: 'Leigh Bardugo',
-  },
-  {
-    id: 2,
-    title: 'Every Day',
-    author: 'David Levithan',
-  },
-  {
-    id: 3,
-    title: 'Darius the Great Is Not Okay',
-    author: 'Adib Khorram',
-  },
-];
+const ADD = 'bookStore/books/ADD_BOOK';
+const REMOVE = 'bookStore/books/REMOVE_BOOK';
+const GET = 'bookStore/books/GET_BOOK';
 
-export const addBook = (book) => ({
-  type: ADD,
-  book,
-});
+const initialState = [];
 
-export const removeBook = (book) => ({
-  type: REMOVE,
-  book,
-});
+export const get = () => async (dispatch) => {
+  const response = await fetch(URL);
+  const data = await response.json();
+  const booksList = Object.entries(data);
+  dispatch({
+    type: GET,
+    booksList,
+  });
+};
+
+export const addBook = (book) => async (dispatch) => {
+  const { id, title, author } = book;
+  await createBook(id, title, author);
+  dispatch({
+    type: ADD,
+    book: [
+      id,
+      [{
+        title,
+        author,
+      }]],
+  });
+};
+
+export const removeBook = (book) => async (dispatch) => {
+  await deleteBook(book);
+  dispatch({
+    type: REMOVE,
+    book,
+  });
+};
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
+    case GET:
+      return action.booksList;
+
     case ADD:
       return [
         ...state, action.book,
       ];
 
     case REMOVE:
-      return state.filter((book) => book.id !== action.book);
+      return state.filter((book) => book[0] !== action.book);
 
     default:
       return state;
