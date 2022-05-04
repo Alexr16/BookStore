@@ -16,8 +16,8 @@ const createBook = async (id, bookTitle, author) => {
   return data;
 };
 
-const removeBook = async (id) => {
-  const response = await fetch(`${URL}/${id}`, {
+const deleteBook = async (id) => {
+  await fetch(`${URL}/${id}`, {
     method: 'DELETE',
     body: JSON.stringify({
       item_id: id,
@@ -28,4 +28,4 @@ const removeBook = async (id) => {
   });
 };
 
-export { createBook, removeBook };
+export { createBook, deleteBook, URL };
