@@ -61,7 +61,7 @@ h1 {
   border: solid 1px #e8e8e8;
   background-color: white;
   border-radius: 4px;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  padding: 2rem 9rem 1.625rem 1.688rem;
 }
 
 .book-data {
@@ -75,6 +75,117 @@ h1 {
 
 li {
   list-style: none;
+}
+
+h3 {
+  font-size: 0.875rem;
+  letter-spacing: normal;
+  color: gray;
+  margin-bottom: 0.25rem;
+}
+
+h4 {
+  font-family: RobotoSlab;
+  font-size: 1.375rem;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.cool-blue {
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.31rem;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.comments {
+  padding-right: 1rem;
+}
+
+.edit {
+  padding-left: 1rem;
+}
+
+.remove {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: none;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  padding: 0 1rem;
+  border-left: solid 2px #e8e8e8;
+  border-right: solid 2px #e8e8e8;
+}
+
+.book-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: solid 2px #e8e8e8;
+  padding-right: 4rem;
+  margin-left: 4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.book-progress .percentage {
+  font-size: 2rem;
+  color: black;
+}
+
+.book-progress p {
+  font-size: 0.875rem;
+  color: gray;
+}
+
+.chapter-info h5 {
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: gray;
+}
+
+.chapter-info p {
+  font-family: RobotoSlab;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.4px;
+}
+
+.chapter-info .update-btn {
+  border: none;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: white;
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 .form-container {
