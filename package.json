@@ -57,6 +57,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "hint": "^6.1.12",
+    "netlify-cli": "^10.2.0",
     "redux-devtools-extension": "^2.13.9",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
