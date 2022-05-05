@@ -1,16 +1,33 @@
+$azure-color: #0290ff;
+$grey-color: #e8e8e8;
+
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: #fafafa;
+}
+
+.nav-container {
+  border-bottom: solid 1px $grey-color;
+  background-color: white;
+}
+
 .li-navbar {
   list-style: none;
-  padding-inline: 0.5rem;
+  padding-inline: 2.5rem;
+}
+
+.li-navbar2 {
+  list-style: none;
 }
 
 h1 {
   font-size: 2em;
   margin: 0;
+  color: $azure-color;
 }
 
 .logo-conatiner {
@@ -20,6 +37,17 @@ h1 {
 .user {
   display: flex;
   align-items: center;
+  appearance: none;
+  border: solid 1px $grey-color;
+  border-radius: 50%;
+  background: none;
+  padding: 0.875rem
+}
+
+.user svg{
+  width: 1.063rem;
+  height: 1.063rem;
+  color: $azure-color;
 }
 
 .book-container {

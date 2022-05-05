@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import { ImUser } from 'react-icons/im';
 
 const Navbar = () => (
-  <div>
+  <div className="nav-container">
     <nav style={{
       margin: '1rem 4rem',
       display: 'flex',
@@ -20,31 +21,31 @@ const Navbar = () => (
               style={({ isActive }) => ({
                 display: 'block',
                 textDecoration: 'none',
-                color: isActive ? 'blue' : 'black',
+                color: isActive ? '#121212' : 'grey',
               })}
               to="/"
             >
-              Books
+              BOOKS
             </NavLink>
           </li>
           <li
-            className="li-navbar"
+            className="li-navbar2"
             key={2}
           >
             <NavLink
               style={({ isActive }) => ({
                 display: 'block',
                 textDecoration: 'none',
-                color: isActive ? 'blue' : 'black',
+                color: isActive ? '#121212' : 'grey',
               })}
               to="/categories"
             >
-              Categories
+              CATEGORIES
             </NavLink>
           </li>
         </ul>
       </div>
-      <div className="user">log icon</div>
+      <button type="button" className="user" label="user"><ImUser /></button>
     </nav>
     <Outlet />
   </div>
