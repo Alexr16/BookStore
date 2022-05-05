@@ -13,6 +13,7 @@ body {
 .nav-container {
   border-bottom: solid 1px $grey-color;
   background-color: white;
+  margin-bottom: 2rem;
 }
 
 .li-navbar {
@@ -51,7 +52,11 @@ h1 {
 }
 
 .book-container {
-  margin: 4rem;
+  margin: 1rem 4rem 1rem ;
+  border:  solid 1px $grey-color;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
 }
 
 .book-data {
