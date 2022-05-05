@@ -8,6 +8,7 @@ const Books = () => (
     </div>
     <div />
     <div className="form-container">
+      <hr />
       <h2>ADD NEW BOOK</h2>
       <Form />
     </div>

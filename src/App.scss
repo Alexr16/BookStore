@@ -1,6 +1,7 @@
 $azure-color: #0290ff;
 $grey-color: #e8e8e8;
 $cool-blue-color: #4386bf;
+$warm-grey: #888;
 
 * {
   margin: 0;
@@ -53,7 +54,7 @@ h1 {
 }
 
 .book-container {
-  margin: 1rem 4rem 1rem ;
+  margin: 1rem 4rem 0 ;
   border:  solid 1px $grey-color;
   background-color: white;
   border-radius: 4px;
@@ -162,7 +163,7 @@ h4 {
     padding: 0.438rem 1.188rem 0.5rem 1.375rem;
     border-radius: 3px;
     background-color: $azure-color;
-    color: white;
+    color: $grey-color;
     font-family: RobotoSlab;
     font-size: 0.813rem;
     font-weight: 300;
@@ -174,6 +175,17 @@ h4 {
 
 .form-container {
   margin: 4rem;
+
+  hr {
+    margin: 2.5rem 0;
+    border: solid 1px $grey-color;
+  }
+
+  h2 {
+    color: $warm-grey;
+    font-size: 1.25rem;
+    letter-spacing: -0.18px;
+  }
 }
 
 .form {
@@ -184,15 +196,35 @@ h4 {
   .title {
     margin-right: 1.5rem;
     width: 65%;
-    padding: 5px;
+    padding: 5px 1rem;
+    border: solid 1px $grey-color;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: #c4c4c4;
+
   }
 
   .author {
     margin-right: 1.5rem;
-    padding: 5px;
+    padding: 5px 1rem;
+    border: solid 1px $grey-color;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: #c4c4c4;
   }
 
   .add-book {
-    padding: 5px;
+    width: 8.938rem;
+    padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+    border: none;
+    border-radius: 3px;
+    background-color: $azure-color;
+    color: white;
+    font-family: RobotoSlab;
+    font-size: 0.813rem;
+    letter-spacing: 0.5px;
+    height: fit-content;
   }
 }
