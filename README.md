@@ -3,11 +3,9 @@
 # Book Store
 
 > In this project I build a "Awesome Books" App that allows users to add a book, remove selected book, and display a list of books.
-<!-- ## Screenshot
+## Screenshot
 
-<img src="./home.png">
-<img src="./calculator.png">
-<img src="./quote.png"> -->
+<img src="./page.png">
 ## Built With
 
 - React
