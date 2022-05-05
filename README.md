@@ -9,15 +9,16 @@
 ## Built With
 
 - React
+- Redux
 - SCSS
 - JavaScript
 - HTML
 
-<!-- ## Live Demo
+## Live Demo
 
 For a live demo
-- Heroku [click here](https://math-magicians-jorge.herokuapp.com/quote).
-- Netlify [click here](https://netlify-thinks-alexr16-is-great.netlify.app). -->
+<!-- - Heroku [click here](https://math-magicians-jorge.herokuapp.com/quote).-->
+- Netlify [click here](https://isnt-alexr16-awesome.netlify.app/). 
 
 ## Getting Started
 
