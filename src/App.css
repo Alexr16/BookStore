@@ -85,14 +85,12 @@ h3 {
 }
 
 h4 {
-  font-family: RobotoSlab;
   font-size: 1.375rem;
   line-height: normal;
   letter-spacing: -0.2px;
 }
 
 .cool-blue {
-  font-family: RobotoSlab;
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
@@ -103,7 +101,6 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1.31rem;
-  font-family: RobotoSlab;
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
@@ -123,7 +120,6 @@ h4 {
           appearance: none;
   border: none;
   background: none;
-  font-family: RobotoSlab;
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
@@ -145,9 +141,6 @@ h4 {
   border-right: solid 2px #e8e8e8;
   padding-right: 4rem;
   margin-left: 10rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .book-progress .progress-container {
@@ -175,14 +168,12 @@ h4 {
 }
 
 .chapter-info h5 {
-  font-family: RobotoSlab;
   font-size: 0.813rem;
   font-weight: 300;
   color: gray;
 }
 
 .chapter-info p {
-  font-family: RobotoSlab;
   font-size: 1rem;
   font-weight: 300;
   margin-top: 0.5rem;
@@ -196,7 +187,6 @@ h4 {
   border-radius: 3px;
   background-color: #0290ff;
   color: #e8e8e8;
-  font-family: RobotoSlab;
   font-size: 0.813rem;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -253,7 +243,6 @@ h4 {
   padding: 5px 1rem;
   border: solid 1px #e8e8e8;
   border-radius: 4px;
-  font-family: Montserrat;
   font-size: 1rem;
   color: #c4c4c4;
 }
@@ -263,7 +252,6 @@ h4 {
   padding: 5px 1rem;
   border: solid 1px #e8e8e8;
   border-radius: 4px;
-  font-family: Montserrat;
   font-size: 1rem;
   color: #c4c4c4;
 }
@@ -275,11 +263,7 @@ h4 {
   border-radius: 3px;
   background-color: #0290ff;
   color: white;
-  font-family: RobotoSlab;
   font-size: 0.813rem;
   letter-spacing: 0.5px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 /*# sourceMappingURL=App.css.map */
