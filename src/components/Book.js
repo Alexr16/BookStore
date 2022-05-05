@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
+import CircularProgressBar from './CircularProgressBar';
 
 const Book = (prop) => {
   const { book } = prop;
@@ -31,6 +32,13 @@ const Book = (prop) => {
           </div>
         </div>
         <div className="book-progress">
+          <div className="progress-container">
+            <CircularProgressBar
+              strokeWidth="10"
+              sqSize="70"
+              percentage={64}
+            />
+          </div>
           <div>
             <p className="percentage">64%</p>
             <p>Completed</p>
@@ -46,9 +54,7 @@ const Book = (prop) => {
           >
             UPDATE PROGRESS
           </button>
-
         </div>
-
       </div>
     </li>
   );

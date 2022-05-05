@@ -54,11 +54,11 @@ h1 {
 }
 
 .book-container {
-  margin: 1rem 4rem 0 ;
+  margin: 1rem 4rem 0;
   border:  solid 1px $grey-color;
   background-color: white;
   border-radius: 4px;
-  padding: 2rem 9rem 1.625rem 1.688rem;
+  padding: 2rem 3rem 1.625rem 1.688rem;
 }
 
 .book-data {
@@ -127,8 +127,14 @@ h4 {
   align-items: center;
   border-right: solid 2px $grey-color;
   padding-right: 4rem;
-  margin-left: 4rem;
+  margin-left: 10rem;
   height: fit-content;
+
+  .progress-container {
+    margin-right: 1.3rem;
+    display: flex;
+    justify-content: center;
+  }
 
   .percentage {
     font-size: 2rem;
@@ -142,6 +148,8 @@ h4 {
 }
 
 .chapter-info {
+  margin-left: 2rem;
+
   h5 {
     font-family: RobotoSlab;
     font-size: 0.813rem;
@@ -169,6 +177,26 @@ h4 {
     font-weight: 300;
     letter-spacing: 0.5px;
   }
+}
+
+#progressInput {
+  margin: 20px auto;
+  width: 30%;
+}
+
+.circle-background,
+.circle-progress {
+  fill: none;
+}
+
+.circle-background {
+  stroke: #ddd;
+}
+
+.circle-progress {
+  stroke: $azure-color;
+  stroke-linecap: square;
+  stroke-linejoin: round;
 }
 
 
